@@ -100,11 +100,11 @@ export default function Navbar() {
 
           <div
             ref={collapseRef}
-            className={`flex items-start md:items-center flex-col md:flex-row gap-5 absolute z-30 md:static top-0 ${
+            className={`flex items-start md:items-center flex-col md:flex-row gap-5 absolute z-[10000] md:static top-0 ${
               show
                 ? "left-0 opacity-100 visible"
                 : "-left-[1200px] opacity-0 invisible"
-            } md:opacity-100 md:visible w-[70%] md:w-auto min-h-screen md:min-h-0 bg-black/20 filter backdrop-blur-md md:filter-none md:backdrop-blur-0 md:bg-inherit p-10 md:p-0 transition-all duration-300 ease-in-out`}
+            } md:opacity-100 md:visible w-[70%] md:w-auto min-h-screen md:min-h-0 bg-black/70 filter backdrop-blur-md md:filter-none md:backdrop-blur-0 md:bg-inherit p-10 md:p-0 transition-all duration-300 ease-in-out`}
           >
             <div className="flex items-center justify-between w-full mb-2 md:hidden">
               <Link href="/" className="text-2xl font-extrabold text-white">
