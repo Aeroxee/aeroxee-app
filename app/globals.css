@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ck-content blockquote {
+    display: block;
+    margin-block-start: 1__qem;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.ck-content strong, .ck-content b {
+    font-weight: bold;
+}
+
+.ck-content i, .ck-content address {
+    font-style: italic;
+}
+
+/* heading elements */
+
+.ck-content h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67__qem;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.ck-content h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83__qem;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.ck-content h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1__qem;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.ck-content h4 {
+    display: block;
+    margin-block-start: 1.33__qem;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.ck-content h5 {
+    display: block;
+    font-size: .83em;
+    margin-block-start: 1.67__qem;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+.ck-content h6 {
+    display: block;
+    font-size: .67em;
+    margin-block-start: 2.33__qem;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+
+/* tables */
+
+.ck-content table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.ck-content .table table td{
+    border: 1px solid #bfbfbf !important;
+}
+
+.ck-content thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.ck-content tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.ck-content tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+/* for tables without table section elements (can happen with XHTML or dynamically created tables) */
+.ck-content table > tr {
+    vertical-align: middle;
+}
+
+.ck-content col {
+    display: table-column;
+}
+
+.ck-content colgroup {
+    display: table-column-group;
+}
+
+.ck-content tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.ck-content td, .ck-content th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.ck-content th {
+    font-weight: bold;
+}
+
+.ck-content caption {
+    display: table-caption;
+    text-align: center;
+}
+
+/* lists */
+
+.ck-content ul, .ck-content menu, .ck-content dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1__qem;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+}
+
+.ck-content ol {
+    display: block;
+    list-style-type: decimal;
+    margin-block-start: 1__qem;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 40px;
+}
+
+.ck-content li {
+    display: list-item;
+    text-align: match-parent;
+}
+
+.ck-content ::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    white-space: pre;
+    text-transform: none;
+}
+
+.ck-content ul ul, .ck-content ol ul {
+    list-style-type: circle;
+}
+
+.ck-content ol ol ul, .ck-content ol ul ul, .ck-content ul ol ul, .ck-content ul ul ul {
+    list-style-type: square;
+}
+
+.ck-content a:any-link {
+    color: blue;
+    text-decoration: underline;
+    cursor: auto;
+}
+
+.ck-content a:any-link:active {
+    color: red;
+}
+
+.ck-content code {
+    color: black;
+}
+
+.ck-content p {
+    margin-bottom: 1rem;
+}
+
+/* Dracula Theme v1.2.5
+ *
+ * https://github.com/dracula/highlightjs
+ *
+ * Copyright 2016-present, All rights reserved
+ *
+ * Code licensed under the MIT license
+ *
+ * @author Denis Ciccale <dciccale@gmail.com>
+ * @author Zeno Rocha <hi@zenorocha.com>
+ */
+
+ .hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: rgba(40, 42, 54, 0.7);
+  }
+  
+  .hljs-built_in,
+  .hljs-selector-tag,
+  .hljs-section,
+  .hljs-link {
+    color: #8be9fd;
+  }
+  
+  .hljs-keyword {
+    color: #ff79c6;
+  }
+  
+  .hljs,
+  .hljs-subst {
+    color: #f8f8f2;
+  }
+  
+  .hljs-title,
+  .hljs-attr,
+  .hljs-meta-keyword {
+    font-style: italic;
+    color: #50fa7b;
+  }
+  
+  .hljs-string,
+  .hljs-meta,
+  .hljs-name,
+  .hljs-type,
+  .hljs-symbol,
+  .hljs-bullet,
+  .hljs-addition,
+  .hljs-variable,
+  .hljs-template-tag,
+  .hljs-template-variable {
+    color: #f1fa8c;
+  }
+  
+  .hljs-comment,
+  .hljs-quote,
+  .hljs-deletion {
+    color: #6272a4;
+  }
+  
+  .hljs-keyword,
+  .hljs-selector-tag,
+  .hljs-literal,
+  .hljs-title,
+  .hljs-section,
+  .hljs-doctag,
+  .hljs-type,
+  .hljs-name,
+  .hljs-strong {
+    font-weight: bold;
+  }
+  
+  .hljs-literal,
+  .hljs-number {
+    color: #bd93f9;
+  }
+  
+  .hljs-emphasis {
+    font-style: italic;
+  }
