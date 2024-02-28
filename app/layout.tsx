@@ -42,7 +42,7 @@ export default async function RootLayout({
   return (
     <html lang="id">
       <body className={``} style={poppins.style}>
-        <NextTopLoader />
+        <NextTopLoader height={5} />
         <div id="top"></div>
         <Image
           src={bgImage}
