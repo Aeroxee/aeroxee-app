@@ -15,6 +15,9 @@ export default async function Repositories() {
     sort: "created",
     direction: "desc",
     visibility: "public",
+    headers: {
+      "If-None-Match": "",
+    },
   });
 
   return (
