@@ -124,7 +124,7 @@ export default function Navbar() {
           {/* Right */}
           <div className="flex items-center">
             <Link href="/" className="text-xl text-white font-extrabold me-10">
-              KafeKoding
+              Aeroxee
             </Link>
 
             <div
