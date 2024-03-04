@@ -4,6 +4,7 @@ import ScrollToTop from "@/components/scrollToTop";
 import bgImage from "@/public/images/bg.jpg";
 import headerStyles from "@/styles/Header.module.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import Image from "next/image";
@@ -55,6 +56,7 @@ export default async function RootLayout({
         {children}
         <ScrollToTop />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
