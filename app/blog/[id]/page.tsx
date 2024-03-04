@@ -1,3 +1,4 @@
+import Code from "@/components/code";
 import Container from "@/components/container";
 import { ClientDB } from "@/libs/db";
 import { ObjectId } from "mongodb";
@@ -30,17 +31,20 @@ export default async function Detail({ params }: Props) {
     .findOne({ _id: ObjectId.createFromHexString(id) });
 
   return (
-    <Container>
-      <div id="about" className="pb-[100px] w-full md:w-[60%] mx-auto">
-        <h1 className="text-2xl text-white font-extrabold mb-4">
-          {blog.title}
-        </h1>
+    <>
+      <Code />
+      <Container>
+        <div id="about" className="pb-[100px] w-full md:w-[60%] mx-auto">
+          <h1 className="text-2xl text-white font-extrabold mb-4">
+            {blog.title}
+          </h1>
 
-        <div
-          className="prose prose-headings:text-sky-600 prose-p:text-white prose-strong:text-white"
-          dangerouslySetInnerHTML={{ __html: blog.content }}
-        ></div>
-      </div>
-    </Container>
+          <div
+            className="prose prose-headings:text-sky-600 prose-p:text-white prose-strong:text-white"
+            dangerouslySetInnerHTML={{ __html: blog.content }}
+          ></div>
+        </div>
+      </Container>
+    </>
   );
 }

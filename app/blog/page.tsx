@@ -1,4 +1,3 @@
-import Code from "@/components/code";
 import Container from "@/components/container";
 import HeaderBlog from "@/components/header-blog";
 import { ClientDB } from "@/libs/db";
@@ -28,7 +27,6 @@ export default async function Blog() {
 
   return (
     <>
-      <Code />
       <Container>
         <h1 className="text-2xl text-white font-extrabold mb-4">Blog Saya</h1>
 
