@@ -137,7 +137,7 @@ export default function Navbar() {
             >
               <div className="flex items-center justify-between w-full mb-2 md:hidden">
                 <Link href="/" className="text-2xl font-extrabold text-white">
-                  KafeKoding
+                  Aeroxee
                 </Link>
                 <button
                   type="button"
